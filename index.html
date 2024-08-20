@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB to Hex Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>RGB to Hex Converter</h2>
+        <div class="converter">
+            <label for="red">Red (0-255):</label>
+            <input type="number" id="red" min="0" max="255" placeholder="0">
+
+            <label for="green">Green (0-255):</label>
+            <input type="number" id="green" min="0" max="255" placeholder="0">
+
+            <label for="blue">Blue (0-255):</label>
+            <input type="number" id="blue" min="0" max="255" placeholder="0">
+
+            <button onclick="convertToHex()">Convert</button>
+
+            <div class="color-preview" id="colorPreview"></div>
+            <div id="result">
+                <h3>Hex Color:</h3>
+                <span id="hexColor">#000000</span>
+            </div>
+
+            <button id="copyButton" onclick="copyHEX()">Copy</button>
+        </div>
+        <div id="popup" class="popup">RGB color copied to clipboard!</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
